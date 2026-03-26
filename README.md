@@ -35,6 +35,13 @@ Settings → Personal Access Token → Generate
 export GOMBOC_PAT="gpt_your_token"
 ```
 
+⚠️ **Security Note:** 
+- Token grants **read-only API access** (least privilege)
+- Safe for CI/CD workflows and GitHub Actions
+- **Never commit to code or `.env` files**
+- Use GitHub Secrets (Actions) or your CI provider's secret management
+- Verify token scope before production use: https://app.gomboc.ai/settings/tokens
+
 ### 3. Scan Code
 
 ```bash

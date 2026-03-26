@@ -18,6 +18,15 @@
 - **Required:** Free account at Gomboc.ai (no credit card)
 - **Setup:** Generate token in Settings → Personal Access Tokens
 
+**Token Scope & Security (Least Privilege):**
+- **Scope:** Read-only API access (minimal required permissions)
+- **Capabilities:** Query account, scans, runs, and fix events only
+- **Restrictions:** Cannot modify, delete, or alter Gomboc configurations
+- **Safe for CI/CD:** No destructive capabilities, suitable for GitHub Actions and workflow secrets
+- **Best Practice:** Generate a dedicated token per environment/workflow; never commit to code
+- **Storage:** Use GitHub Secrets (Actions) or CI provider's secure secret management
+- **Verification:** Check token scope in Gomboc settings before use in production
+
 **Shipped Files:**
 - `SKILL.md` — This documentation
 - `README.md` — Quick start guide
