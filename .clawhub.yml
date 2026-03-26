@@ -1,10 +1,13 @@
 name: gomboc-security
 version: 0.2.2
 description: Deterministic code remediation for any codebase - fix security issues with 94%+ accuracy using Gomboc.ai Community Edition
-author: Gomboc AI, Inc.
+author: Gomboc AI
 license: MIT
-repository: https://github.com/Gomboc-AI/gomboc-security
+repository: https://github.com/andrewpetecoleman-cloud/gomboc-security
 homepage: https://www.gomboc.ai
+maintainers:
+  - name: Gomboc AI
+    url: https://gomboc.ai
 
 keywords:
   - remediation
