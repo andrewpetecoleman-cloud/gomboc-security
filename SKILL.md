@@ -2,6 +2,35 @@
 
 **Deterministic, merge-ready code fixes powered by ORL (Open Remediation Language).**
 
+---
+
+## Provenance & External Dependencies
+
+**Source:** This skill wraps the official [Gomboc.ai Community Edition](https://www.gomboc.ai) code remediation engine.
+
+**Official Documentation:** https://docs.gomboc.ai  
+**Community Discussions:** https://github.com/Gomboc-AI/gomboc-ai-feedback/discussions  
+**GitHub App:** https://github.com/apps/gomboc-ai-community  
+
+**External API Dependency:**
+- **Endpoint:** https://api.app.gomboc.ai/graphql
+- **Authentication:** Bearer token (Personal Access Token from https://app.gomboc.ai)
+- **Required:** Free account at Gomboc.ai (no credit card)
+- **Setup:** Generate token in Settings → Personal Access Tokens
+
+**Shipped Files:**
+- `SKILL.md` — This documentation
+- `README.md` — Quick start guide
+- `SECURITY.md` — Security audit
+- `scripts/cli-wrapper.py` — Python CLI wrapper
+- `scripts/docker-compose.yml` — MCP server configuration
+- `examples/vulnerable.tf` — Example vulnerable code
+- `references/` — Integration guides
+
+**License:** MIT (see LICENSE.md)
+
+---
+
 Gomboc.ai Community Edition automatically scans and fixes code issues across your entire codebase — infrastructure, applications, configurations, and more — using a deterministic remediation engine (no hallucinations). Unlike traditional scanners that generate alerts, Gomboc delivers merge-ready pull requests that clear your code issues backlogs. This skill wraps Gomboc's power into agent workflows, CLI tools, and CI/CD pipelines, making it the perfect complement to agentic coding.
 
 ## How Gomboc Works
